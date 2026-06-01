@@ -127,28 +127,7 @@
 </script>
 </div>
 </div>
-<script>
-    function resizeGame() {
-        const game = document.getElementById('mi-juego');
-        const wrapper = document.querySelector('.game-wrapper');
-        
-        // Medidas base de tu diseño
-        const baseWidth = 1200;
-        const baseHeight = 800;
-        
-        // Calcular escala según el ancho y alto de la ventana
-        const scaleX = window.innerWidth / baseWidth;
-        const scaleY = window.innerHeight / baseHeight;
-        const scale = Math.min(scaleX, scaleY);
-        
-        // Aplicar la escala
-        game.style.transform = `scale(${scale})`;
-    }
 
-    // Ejecutar al cargar y al cambiar el tamaño de la ventana
-    window.addEventListener('resize', resizeGame);
-    window.addEventListener('load', resizeGame);
-</script>
 
 </body>
 </html>
