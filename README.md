@@ -23,8 +23,7 @@
     </style>
 </head>
 <body>
-<div class="game-wrapper">
-    <div id="mi-juego">
+
 <div class="game-box">
     <h1>⚡ MATE-ESCUDO XPRESS ⚡</h1>
     <div id="instrucciones">
@@ -125,8 +124,6 @@
         document.getElementById('juego').innerHTML = `<h2>Misión Finalizada</h2><p>Puntaje: ${pts}%</p><button class="btn-main" onclick="location.reload()">REINICIAR</button>`;
     }
 </script>
-</div>
-</div>
 <script>
     function resizeGame() {
         const game = document.getElementById('mi-juego');
