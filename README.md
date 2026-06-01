@@ -14,17 +14,17 @@
         #timer { font-size: 1.5em; color: #f1c40f; }
         .btn-main { padding: 15px 30px; background: #f39c12; border: none; color: white; cursor: pointer; border-radius: 10px; font-size: 1.2em; }
         .hidden { display: none; }
-   /* IMPORTANTE: Ajuste para móviles */
+         /* IMPORTANTE: Ajuste para móviles */
 @media (max-width: 768px) {
     .sidebar { width: 100%; height: auto; position: relative; } /* El menú se vuelve una barra superior */
     .main { margin-left: 0; width: 100%; } /* El contenido ocupa todo el ancho */
     .grid { grid-template-columns: repeat(2, 1fr); } /* Módulos de 2 en 2 en móviles */
 }
-    </style>
+ 
+  </style>
 </head>
 <body>
-<div class="game-wrapper">
-    <div id="mi-juego">
+
 <div class="game-box">
     <h1>⚡ MATE-ESCUDO XPRESS ⚡</h1>
     <div id="instrucciones">
@@ -125,9 +125,5 @@
         document.getElementById('juego').innerHTML = `<h2>Misión Finalizada</h2><p>Puntaje: ${pts}%</p><button class="btn-main" onclick="location.reload()">REINICIAR</button>`;
     }
 </script>
-</div>
-</div>
-
-
 </body>
 </html>
